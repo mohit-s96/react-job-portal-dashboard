@@ -1,0 +1,129 @@
+.user-dashboard-container{
+    width: 100%;
+    display: flex;
+}
+.user-posts-wrapper{
+    width: 50%;
+    border-right: 2px solid rgba(94, 54, 133, 0.712);
+    display: flex;
+    justify-content: center;
+}
+.post-container::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.post-container::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+.post-container::-webkit-scrollbar-thumb
+{
+    background-color: #68199c;
+    border-radius: 3px;
+}
+.user-posts{
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+}
+.heading-wrapper{
+    text-align: center;
+}
+.user-posts h3.user-heading{
+    padding: 10px;
+    font-size: 1.8em;
+    color: rgb(109, 37, 177);
+    /* margin: 0 auto; */
+}
+.loading-posts{
+    text-align: center;
+}
+.post-container{
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    overflow-y: scroll;
+    height: 86vh;
+}
+.single-post-wrapper{
+    width: 96%;
+    margin: 0 auto;
+    padding: 5px;
+    margin-bottom: 8px;
+    background-color: rgba(99, 29, 180, 0.712);
+    cursor: pointer;
+}
+.single-post-wrapper h3{
+    color: white;
+    font-weight: 400;
+    font-size: 1em;
+    padding: 8px;
+}
+.single-post-wrapper h5{
+    color: white;
+    font-weight: 600;
+    font-size: 0.9em;
+    padding: 8px;
+}
+.single-post-wrapper div{
+    padding: 8px;
+}
+.location{
+    color: white;
+    font-weight: 400;
+    font-size: 0.9em;
+}
+.location span{
+    font-weight: 600;
+}
+.ctc{
+    color: white;
+    font-weight: 400;
+    font-size: 0.9em;
+}
+.ctc span{
+    font-weight: 400;
+    padding-right: 4px;
+    font-size: 0.9em;
+}
+.ctc .currency{
+    font-weight: 600;
+}
+.post-author{
+    color: white;
+    font-weight: 400;
+    font-size: 0.8em;
+    display: flex;
+}
+.img-avatar{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: tomato;
+    border-radius: 20px;
+    position: relative;
+}
+.img-avatar img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dayjs{
+    transform: translateY(30%);
+    padding-left: 5px;
+}
+.edit-post{
+    float: right;
+    padding: 8px;
+    font-size: 0.8em;
+    background-color: blue;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+}

@@ -1,0 +1,42 @@
+.single-post-view-wrapper{
+    width: 100%;
+    min-height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one-post-wrapper{
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 8px;
+    background-color: rgba(99, 29, 180, 0.712);
+}
+.one-post-wrapper h3{
+    color: white;
+    font-weight: 400;
+    font-size: 1em;
+    padding: 8px;
+}
+.one-post-wrapper h5{
+    color: white;
+    font-weight: 600;
+    font-size: 0.9em;
+    padding: 8px;
+}
+.one-post-wrapper div{
+    padding: 8px;
+}
+.skills-required{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.job-desc{
+    color: white;
+    font-weight: 600;
+    font-size: 0.9em;
+    padding: 8px;
+}
+.desc{
+    font-weight: 300;
+}

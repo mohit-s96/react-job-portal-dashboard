@@ -1,0 +1,119 @@
+.post-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    min-height: 94vh;
+}
+.form-heading{
+    margin: 2em;
+    text-align: center;
+    font-weight: 400;
+    color: rgba(127, 43, 195, 0.883);
+}
+.form-container{
+    width: 100%;
+}
+.form-item{
+    margin: 8px;
+    width: 60%;
+    padding: 8px;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: rgba(127, 43, 195, 0.726);
+    border-radius: 5px;
+}
+.form-item::placeholder{
+    color: #fff;
+}
+.form-item:focus{
+    border: 1px solid rgba(99, 29, 180, 0.712);
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.2s ease-in-out;
+}
+.inputs{
+    width: 100%;
+    text-align: center;
+}
+.skill-form-wrapper{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.skills-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;margin: 1em auto;
+    background-color: #631db4b6;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+}
+.skill-item{
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: 4px;
+    color: #fff;
+    background-color: rgb(71, 7, 131);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add-skill{
+    padding: 8px;
+    font-size: 0.9em;
+    border: none;
+    outline: none;
+    border: 1px solid #631db4b6;
+    border-radius: 5px;
+}
+.skill-btn{
+    padding: 8px;
+    font-size: 0.9em;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #631db4b6;
+    cursor: pointer;
+}
+.submit-wrapper{
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+}
+.submit-btn{
+    padding: 12px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #631db4b6;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.submit-btn-gray{
+    background-color: gray;
+}
+.auto-container{
+    width: 40%;
+    margin: 0 auto;
+    background-color: rgba(128, 39, 211, 0.678);
+    padding: 4px;
+}
+.auto-container div{
+    width: 80%;
+    font-size: 0.8em;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: 8px auto;
+    background-color: #fff;
+}
+.auto-container div:hover{
+    background-color: #f1f1f1;
+}

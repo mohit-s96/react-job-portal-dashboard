@@ -1,0 +1,12 @@
+.search-post{
+    width: 60%;
+}
+.search-post-container{
+    margin-top: 2em;
+}
+.search-header{
+   text-align: center;
+   color: blueviolet;
+   font-size: 1.4em;
+   padding: 8px;
+}
