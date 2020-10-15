@@ -16,7 +16,7 @@ import jwtDecode from 'jwt-decode';
 import {logoutUser} from './redux/actions/userAction';
 import AuthRoute from './util/AuthRoute'; 
 
-axios.defaults.baseURL = "https://asia-northeast1-bestjobs-a6f12.cloudfunctions.net/api";
+axios.defaults.baseURL = "your_public_endpoint";
 
 const token = localStorage.getItem('jwt-auth');
 if(token){

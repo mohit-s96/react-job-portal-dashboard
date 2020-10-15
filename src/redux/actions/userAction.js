@@ -6,7 +6,7 @@ import axios from 'axios';
 
 export const loginUser = (userData, history) => dispatch => {
     dispatch({type: LOADING_UI});
-    axios.post('https://asia-northeast1-bestjobs-a6f12.cloudfunctions.net/api/login', userData)
+    axios.post('your_public_endpoint/login', userData)
              .then(res => {
                 localStorage.setItem('jwt-auth', res.data.token);
                 axios.defaults.headers.common['Authorization'] = `Bearer ${res.data.token}`;
@@ -31,7 +31,7 @@ export const logoutUser = () => dispatch => {
 
 export const signupUser = (userData, history) => dispatch => {
     dispatch({type: LOADING_UI});
-    axios.post('https://asia-northeast1-bestjobs-a6f12.cloudfunctions.net/api/signup', userData)
+    axios.post('your_public_endpoint/signup', userData)
              .then(res => {
                 localStorage.setItem('jwt-auth', res.data.token);
                 axios.defaults.headers.common['Authorization'] = `Bearer ${res.data.token}`;
@@ -49,7 +49,7 @@ export const signupUser = (userData, history) => dispatch => {
 
 export const getUserData = () => dispatch => {
     dispatch({type: LOADING_USER});
-    axios.get('https://asia-northeast1-bestjobs-a6f12.cloudfunctions.net/api/postauth')
+    axios.get('your_public_endpoint/postauth')
          .then(res => {
              dispatch({
                  type: SET_USER,
@@ -62,7 +62,7 @@ export const getUserData = () => dispatch => {
 export const postOneJob = body => dispatch => {
     dispatch({type: POSTING});
     dispatch({type: LOADING_USER});
-    axios.post('https://asia-northeast1-bestjobs-a6f12.cloudfunctions.net/api/postjob', body)
+    axios.post('your_public_endpoint/postjob', body)
          .then(() => {
             dispatch({type: POSTED});
             dispatch(getUserData());
@@ -76,7 +76,7 @@ export const postOneJob = body => dispatch => {
 export const getOnePost = id => dispatch => {
     dispatch({type: LOADING_POST});
     const body ={postId: id}
-    axios.post('https://asia-northeast1-bestjobs-a6f12.cloudfunctions.net/api/getone', body)
+    axios.post('your_public_endpoint/getone', body)
          .then(res => {
              dispatch({
                  type: LOADED_POST,
@@ -89,7 +89,7 @@ export const getOnePost = id => dispatch => {
 export const updatePost = body => dispatch => {
     dispatch({type: POSTING});
     dispatch({type: LOADING_USER});
-    axios.post('https://asia-northeast1-bestjobs-a6f12.cloudfunctions.net/api/updatepost', body)
+    axios.post('your_public_endpoint/updatepost', body)
     .then(() => {
         dispatch({type: POSTED});
         dispatch(getUserData());
@@ -101,7 +101,7 @@ export const updatePost = body => dispatch => {
 
 export const searchJobs = job => dispatch => {
     dispatch({type: LOAD_JOBS});
-    axios.post('https://asia-northeast1-bestjobs-a6f12.cloudfunctions.net/api/getjob', {job: job})
+    axios.post('your_public_endpoint/getjob', {job: job})
          .then(res => {
             if(res.data.jobs.length > 0){
                 dispatch({type: CLEAR_SEARCH_ERRORS})

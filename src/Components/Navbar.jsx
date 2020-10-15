@@ -13,7 +13,7 @@ function Navbar(props) {
     const setKeywords = (e) => {
         let x = e.target.value;
         SetKeywords(x);
-        axios.post('https://asia-northeast1-bestjobs-a6f12.cloudfunctions.net/api/searchlist', {searchWords: x})
+        axios.post('your_public_endpoint/searchlist', {searchWords: x})
              .then(res => {
                  console.log(res.data);
                  SetSearchList([]);
