@@ -1,3 +1,13 @@
+####
+
+Hello to anyone who stumbled on this page, I hope you're doing good.
+Idk how you got here but I'd like to inform you that I don't work on
+this anymore. Infact I haven't done so for about half an year now.
+There were a lot of things that could've improved but I just don't
+have the time needed. If you are a recruiter and want to look at
+something I have worked on recently then head over to [Whiner App](https://whiner2-82d5e.web.app/).It is what I
+usually work on in my spare time.
+
 Check out the live version here [Best Jobs](https://bestjobs-a6f12.web.app/).
 
 ## About
