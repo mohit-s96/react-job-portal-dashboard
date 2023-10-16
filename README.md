@@ -1,12 +1,8 @@
-####
+# UNMAINTAINED PUBLIC ARCHIVE
+I made this project when I had a total of 2 months experience with webdev. please stop starring this thank you. you can check out this instead https://github.com/mohit-s96/blog. 
 
-Hello to anyone who stumbled on this page, I hope you're doing good.
-Idk how you got here but I'd like to inform you that I don't work on
-this anymore. Infact I haven't done so for about half an year now.
-There were a lot of things that could've improved but I just don't
-have the time needed. If you are a recruiter and want to look at
-something I have worked on recently then head over to [Whiner App](https://whiner2-82d5e.web.app/).It is what I
-usually work on in my spare time.
+
+---
 
 Check out the live version here [Best Jobs](https://bestjobs-a6f12.web.app/).
 
@@ -17,10 +13,6 @@ Recruiter dashboard for a job portal website in react. Allows recruiter authenti
 ## Backend
 
 I used firebase's admin SDK to get up and running with a backend service.
-
-## Styling
-
-All component based custom CSS without any framework :)
 
 ### Current Features
 
